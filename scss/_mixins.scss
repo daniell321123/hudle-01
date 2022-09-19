@@ -1,7 +1,7 @@
 @use 'variables';
 
 @mixin desktop-view($width, $height: unset, $fontSize: unset) {
-    @media (min-width: 1440px) {
+    @media (min-width: 778px) {
         width: $width;
         height: $height;
         font-size: $fontSize;
@@ -18,7 +18,7 @@
 };
 
 @mixin section-statistics-desktop{
-    @media screen and(min-width: 1440px) {
+    @media screen and(min-width: 778px) {
         flex-direction: row;
         justify-content: space-around;
         height: 800px;
@@ -35,13 +35,13 @@
 }
 
 @mixin banner-desktop($url-top, $url-bottom){
-    @media screen and(min-width: 1440px) { 
+    @media screen and(min-width: 778px) { 
         background-image: url($url-top), url($url-bottom);
     }
 }
 
 @mixin flexSection-desktop($direction: unset) {
-    @media screen and(min-width: 1440px) {
+    @media screen and(min-width: 778px) {
         flex-direction: row;
         justify-content: space-around;
         flex-direction: $direction;
@@ -141,7 +141,7 @@
 };
 
 @mixin statistics-desktop($width, $font-size-s, $font-size-d ){
-    @media (min-width: 1440px) {
+    @media (min-width: 778px) {
         &__logo {
             width: $width;
         }

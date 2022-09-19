@@ -1,6 +1,8 @@
 @use "./contacto";
 @use  "./gratis";
+@use "../scss/masinformacion";
 @use './mixins';
+@use  "./premiun";
 @use './variables';
 
 * {
@@ -139,7 +141,7 @@ body {
 
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 778px) {
     .section-your-comunity {
         height: 750px;
     }
@@ -156,7 +158,7 @@ body {
     margin-top: -1px;
     padding: 70px 24px 40px; 
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 778px) {
     .newsletter {
         display: flex;
         flex-direction: row-reverse; 
@@ -200,7 +202,7 @@ body {
         @include mixins.button-hover(variables.$LightPink);
     }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 778px) {
     .newsletter-contact {
         &__logo-huddle {
             width: 250px;
@@ -251,7 +253,7 @@ body {
         @include mixins.button-hover(variables.$LightPink);
     }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 778px) {
     .newsletter-subscription{
         display: flex;
         width: 580px;
